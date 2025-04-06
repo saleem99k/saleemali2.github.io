@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu - Sweet Delights</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Fix for "Our Menu" text being behind header */
+    .menu-hero {
+      padding-top: 120px;
+      text-align: center;
+      background-color: #f5f5f5;
+    }
+
+    /* Menu Section Styling */
+    .menu-items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 40px 20px;
+    }
+
+    .product-item {
+      width: 250px;
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .product-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .product-item img {
+      width: 100%;
+      height: auto;
+      max-width: 180px;
+      margin-bottom: 10px;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    .product-item h3 {
+      font-size: 18px;
+      color: #cc9058;
+      margin-bottom: 5px;
+    }
+
+    .product-item p {
+      font-size: 14px;
+      color: #2e2424;
+    }
+  </style>
+</head>
+<body>
+
+<header class="main-header">
+  <div class="container">
+    <h1 class="logo">Sweet Delights</h1>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="menu-hero">
+  <div class="container">
+    <h2>Our Menu</h2>
+    <p>Delicious treats made fresh daily. Explore our selection below!</p>
+  </div>
+</section>
+
+<section class="menu-items">
+  <div class="container product-grid">
+    <div class="product-item">
+      <img src="images/bread.png" alt="Fresh Bread" />
+      <h3>Fresh Bread</h3>
+      <p>Warm, crusty, and perfect for any meal.</p>
+    </div>
+    <div class="product-item">
+      <img src="images/pastry.png" alt="Pastries" />
+      <h3>Pastries</h3>
+      <p>Flaky, buttery delights with sweet and savory fillings.</p>
+    </div>
+    <div class="product-item">
+      <img src="images/cake.png" alt="Cakes" />
+      <h3>Cakes</h3>
+      <p>Moist, flavorful cakes for every occasion.</p>
+    </div>
+    <div class="product-item">
+      <img src="images/cookies.png" alt="Cookies" />
+      <h3>Cookies</h3>
+      <p>Chewy and crispy cookies baked to perfection.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="main-footer">
+  <div class="container">
+    <p>&copy; 2025 Sweet Delights Bakery | All rights reserved</p>
+  </div>
+</footer>
+
+</body>
+</html>
